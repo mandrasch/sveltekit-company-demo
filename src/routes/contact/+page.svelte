@@ -1,11 +1,11 @@
 <svelte:head>
-	<title>About</title>
+	<title>Contact</title>
 	<meta name="description" content="About this app" />
 </svelte:head>
 
 <!-- TODO: is it the best way to define it in every route? or use prose in +layout.svelte? -->
 <div class="prose lg:prose-xl mx-auto">
-	<h1>About this app</h1>
+	<h1>Contact</h1>
 
 	<p>
 		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the

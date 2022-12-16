@@ -16,7 +16,7 @@
 <!-- TODO: Is structure <header> > <nav> good practice for a11y? -->
 
 <header class="bg-gray-800">
-	<nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
+	<nav class="container max-w-6xl	px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
 		<div class="flex items-center justify-between">
 			<a class="text-xl font-bold text-gray-100 md:text-2xl hover:text-blue-400" href="/"
 				>Sustainable Company X
@@ -54,23 +54,22 @@
 				: 'hidden'} flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0"
 		>
 			<ul
-				class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0"
+				class="flex flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0"
 			>
 				<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 					<a class="block text-gray-100 hover:text-blue-400" href="/">Home</a>
 				</li>
-				<li aria-current={$page.url.pathname === '/blogs' ? 'page' : undefined}>
+				<li aria-current={$page.url.pathname === '/blog' ? 'page' : undefined}>
 					<a class="text-gray-100 hover:text-blue-400" href="/blog">Blog</a>
 				</li>
 				<li aria-current={$page.url.pathname === '/contact' ? 'page' : undefined}>
 					<a class="text-gray-100 hover:text-blue-400" href="/contact">Contact US</a>
 				</li>
 				<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-					<a
-						class="text-gray-100 hover:text-blue-400"
-						href="/about"
-						aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>About Us</a
-					>
+					<a class="text-gray-100 hover:text-blue-400" href="/about">About Us</a>
+				</li>
+				<li aria-current={$page.url.pathname === '/sverdle' ? 'page' : undefined}>
+					<a class="text-gray-100 hover:text-blue-400" href="/sverdle">Sverdle</a>
 				</li>
 			</ul>
 			<div class="space-y-2">
@@ -95,19 +94,21 @@
 <style lang="scss">
 	// Idea used from SvelteKit demo site
 	// TODO: transform to tailwind?
-	ul {
-		height: 3em;
-	}
 	li {
 		position: relative;
 		height: 100%;
+		min-height: 3em;
+		display: flex;
+		align-items: center;
 		a {
 			display: flex;
 			height: 100%;
-			align-items: center;
+
 			padding: 0 0.5rem;
 		}
 	}
+
+	// indicator css trick, 0x0 box -> border will generate an arrow
 	li[aria-current='page']::before {
 		--size: 6px;
 		content: '';
@@ -119,4 +120,34 @@
 		border: var(--size) solid transparent;
 		border-top: var(--size) solid white; // var(--color-theme-1)
 	}
+
+	// mobile adjustments for indicator
+	@media (max-width: 768px) {
+		li {
+			flex-grow: 1;
+			width: 100%;
+			a {
+				width: 100%;
+			}
+		}
+		li[aria-current='page']::before {
+			--size: 6px;
+			position: absolute;
+			width: 0;
+			height: 0;
+			top: calc(50% - var(--size));
+			left: auto;
+			right: 0;
+			border: var(--size) solid transparent;
+			border-right: var(--size) solid white; // var(--color-theme-1)
+		}
+	}
+
+	// TODO: these do not work in SvelteKit?! https://tailwindcss.com/docs/functions-and-directives#screen
+	/* @media screen(sm) {
+		body {
+			color: red;
+		}
+	}*/
+	// TODO: use another arrow / rotate it for mobile (which breakpoints to use?)
 </style>

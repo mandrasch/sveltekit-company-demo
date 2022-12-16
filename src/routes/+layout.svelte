@@ -9,7 +9,8 @@
 	<Header />
 	<!-- <HeaderOriginal /> -->
 
-	<main>
+	<!-- TODO: Good practice here with py and px? How to optimize for mobile? -->
+	<main class="container mx-auto py-20 px-10">
 		<slot />
 	</main>
 
@@ -19,23 +20,6 @@
 </div>
 
 <style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
 	footer {
 		display: flex;
 		flex-direction: column;

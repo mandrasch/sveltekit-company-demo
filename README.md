@@ -45,6 +45,10 @@ git add -A && git commit -m "Initial commit"
 
 # Added sass:
 npm i sass
+
+# Added tailwind typography
+# https://tailwindcss.com/docs/typography-plugin
+npm install -D @tailwindcss/typography
 ```
 
 Tested with
@@ -57,3 +61,8 @@ Thanks very much to anyone providing these resources!
 
 - Header & Navbar
   - https://larainfo.com/blogs/sveltekit-responsive-navbar-menu-with-tailwind-css-example
+
+## TODOs / ideas
+
+- [ ] Add google fonts locally
+- [ ] Add (accessible) dropdown menu nav
