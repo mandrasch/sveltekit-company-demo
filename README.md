@@ -1,6 +1,8 @@
 # SvelteKit company demo
 
-Simple company demo site for showcasing a headless CMS use case with SvelteKit 1.0
+Simple company demo site for showcasing a headless CMS use case with SvelteKit 1.0.
+
+This is a fork of the "SvelteKit demo app" which can be generated via `npm create svelte@latest my-app`. See https://kit.svelte.dev/ for more information.
 
 ## Developing
 
