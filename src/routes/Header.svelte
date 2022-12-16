@@ -73,17 +73,17 @@
 				</li>
 			</ul>
 			<div class="space-y-2">
-				<a
-					href="/login"
+				<!-- <a
+					href="/contact"
 					class="py-3 px-4 text-center border text-gray-800 bg-white hover:text-indigo-600 rounded-md block lg:inline lg:border-0"
 				>
-					Login
-				</a>
+					Call us
+				</a> -->
 				<a
-					href="/signup"
+					href="/contact"
 					class="py-3 px-4 text-center text-white bg-indigo-600 hover:bg-indigo-700 rounded-md shadow block lg:inline"
 				>
-					Sign Up
+					Get a quote
 				</a>
 			</div>
 		</div>

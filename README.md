@@ -64,5 +64,14 @@ Thanks very much to anyone providing these resources!
 
 ## TODOs / ideas
 
+- [ ] Add a contact form
+- [ ] Add WordPress REST API
+- [ ] Add typo3 REST API
 - [ ] Add google fonts locally
 - [ ] Add (accessible) dropdown menu nav
+- [ ] Add images
+- [ ] Add icons
+- [ ] Add svelte-charts
+- [ ] QM: Test with multiple screenreaders
+
+On SvelteKits roadmap itself: Image optimization, Multilanguage
