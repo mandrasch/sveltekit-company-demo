@@ -1,10 +1,13 @@
 <script>
 	import Header from './Header.svelte';
+	import HeaderOriginal from './Header.original.svelte';
 	import './styles.css';
+	import '../app.css'; // tailwindCSS
 </script>
 
 <div class="app">
 	<Header />
+	<!-- <HeaderOriginal /> -->
 
 	<main>
 		<slot />
