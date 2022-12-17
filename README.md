@@ -87,6 +87,9 @@ Thanks very much to anyone providing these resources!
 ## TODOs / ideas
 
 - [ ] Add a contact form
+  - [ ] Add accessible and GDPR-compatible captcha
+- [ ] GDPR / privacy: Add a cookie banner
+- [ ] GDPR / privacy: Add a 2 click solution for youtube (or other embeds)
 - [ ] Add WordPress REST API
   - (Already experimented with WPGraphQL https://github.com/mandrasch/sveltekit-wp-bs5)
 - [ ] Add typo3 REST API
