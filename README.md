@@ -1,13 +1,18 @@
 # SvelteKit company demo
 
-Simple company demo site for showcasing a headless CMS use case with SvelteKit 1.0.
+Simple company demo site for showcasing some SSR use cases with [SvelteKit 1.0](https://kit.svelte.dev/).
 
-This is a fork of the "SvelteKit demo app" which can be generated via `npm create svelte@latest my-app`. See https://kit.svelte.dev/ for more information.
+This is based on the "SvelteKit demo app" which can be generated via
 
-It is deployed via ploi.io on a european Hetzner Cloud instance:
-https://dev.to/mandrasch/host-sveltekit-apps-with-ssr-support-via-ploiio-on-hetzner-cloud-1cpa
+```
+npm create svelte@latest my-app
+```
 
-Live: https://sveltekit-company-demo.mandrasch.dev/
+This web app is deployed via ploi.io to an european Hetzner Cloud instance:
+
+https://sveltekit-company-demo.mandrasch.dev/
+
+See [Tutorial: Host SvelteKit apps with SSR-support via ploi.io on Hetzner Cloud](https://dev.to/mandrasch/host-sveltekit-apps-with-ssr-support-via-ploiio-on-hetzner-cloud-1cpa) for infos about this.
 
 ## Developing
 
