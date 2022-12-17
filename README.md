@@ -37,7 +37,7 @@ You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
-## Hows was this created?
+## How was this created?
 
 ```bash
 npm create svelte@latest .
@@ -79,7 +79,7 @@ Thanks very much to anyone providing these resources!
 - [ ] Add a contact form
 - [ ] Add WordPress REST API
 - [ ] Add typo3 REST API
-- [ ] Add google fonts locally
+- [ ] Add google fonts locally (via font source?)
 - [ ] Add (accessible) dropdown menu nav
 - [ ] Add images
 - [ ] Add icons
