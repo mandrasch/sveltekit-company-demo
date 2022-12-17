@@ -2,11 +2,19 @@
 
 Simple company demo site for showcasing some SSR use cases with [SvelteKit 1.0](https://kit.svelte.dev/).
 
+![Screenshot demo site with welcome logo and simple navbar header](.gh-screenshots/preview.jpg?raw=true)
+
+https://sveltekit-company-demo.mandrasch.dev/
+
 This is based on the "SvelteKit demo app" which can be generated via
 
 ```
 npm create svelte@latest my-app
 ```
+
+I added TailwindCSS ([guide](https://tailwindcss.com/docs/guides/sveltekit)). See section "How was this created?" for more information.
+
+## Deployment
 
 This web app is deployed via ploi.io to an european Hetzner Cloud instance:
 
