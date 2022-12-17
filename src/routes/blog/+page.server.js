@@ -1,11 +1,12 @@
-import { error } from '@sveltejs/kit';
+// TODO: error handling via import { error } from '@sveltejs/kit';
 
 // We could private keys here which will never be shown
 // to public (client side) javascript / dev tools
-// See: https://youtu.be/EQy-AYhZIlE?t=609
+// See: Loading Data in SvelteKit (+page.js & +page.server.js)
+// by Huntabyte, https://youtu.be/EQy-AYhZIlE?t=609
 
 /** @type {import('./$types').PageServerLoad} */
-export async function load({ params }) {
+export async function load() {
 	const responseUsers = await fetch('https://jsonplaceholder.typicode.com/users');
 	const users = await responseUsers.json();
 	console.log("Retrieved users server side, client won't see this", { users });
@@ -18,6 +19,4 @@ export async function load({ params }) {
 		users,
 		currentTime
 	};
-
-	throw error(404, 'Not found');
 }
