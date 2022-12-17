@@ -1,6 +1,6 @@
 # SvelteKit company demo
 
-Simple company demo site for showcasing some SSR use cases with [SvelteKit 1.0](https://kit.svelte.dev/).
+Simple company demo site for showcasing some SSR use cases with [SvelteKit 1.0](https://kit.svelte.dev/). It's work in progress.
 
 ![Screenshot demo site with welcome logo and simple navbar header](.gh-screenshots/preview.jpg?raw=true)
 
