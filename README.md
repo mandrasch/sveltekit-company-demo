@@ -78,6 +78,7 @@ Thanks very much to anyone providing these resources!
 
 - [ ] Add a contact form
 - [ ] Add WordPress REST API
+  - (Already experimented with WPGraphQL https://github.com/mandrasch/sveltekit-wp-bs5)
 - [ ] Add typo3 REST API
 - [ ] Add google fonts locally (via font source?)
 - [ ] Add (accessible) dropdown menu nav
@@ -88,3 +89,5 @@ Thanks very much to anyone providing these resources!
 - [ ] QM: Test with multiple screenreaders
 
 On SvelteKits roadmap itself: Image optimization, Multilanguage
+
+See https://dev.to/mandrasch for some blog posts about SvelteKit, happy to connect and discuss!
