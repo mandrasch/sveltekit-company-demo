@@ -16,6 +16,13 @@
 
 	<footer>
 		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+
+		<p class="mt-2">
+			This site does not track or collect personal data, see my general
+			<a class="text-underline" href="https://matthias-andrasch.eu/blog/impressum-datenschutz/"
+				>Imprint & Privacy terms</a
+			> for contact information.
+		</p>
 	</footer>
 </div>
 
