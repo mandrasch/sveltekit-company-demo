@@ -81,6 +81,7 @@ Thanks very much to anyone providing these resources!
 - [ ] Add typo3 REST API
 - [ ] Add google fonts locally (via font source?)
 - [ ] Add (accessible) dropdown menu nav
+  - https://caffeinecreations.ca/blog/accessible-dropdown-navigation-with-tailwind-css-and-alpine-js/
 - [ ] Add images
 - [ ] Add icons
 - [ ] Add svelte-charts
