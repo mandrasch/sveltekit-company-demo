@@ -63,7 +63,7 @@
 					<a class="text-gray-100 hover:text-blue-400" href="/blog">Blog</a>
 				</li>
 				<li aria-current={$page.url.pathname === '/contact' ? 'page' : undefined}>
-					<a class="text-gray-100 hover:text-blue-400" href="/contact">Contact US</a>
+					<a class="text-gray-100 hover:text-blue-400" href="/contact">Contact</a>
 				</li>
 				<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 					<a class="text-gray-100 hover:text-blue-400" href="/about">About Us</a>
